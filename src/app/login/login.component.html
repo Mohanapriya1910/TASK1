@@ -1,0 +1,34 @@
+<link href="login.component.css" rel="stylesheet">
+<div class="container">
+    <div class="form-box">
+    <div class="center">
+        <div class="col-md-12">
+            <form (ngSubmit)="login()">
+            <h3>WELCOME :)</h3>
+            <div class="form-group p-2">
+            <input type="email" name="email" class="form-control" [(ngModel)]="email" placeholder="E-mail" required><br><br>
+        </div>
+        <div class="form-group p-2">
+            <input type="password" name="password" class="form-control" [(ngModel)]="password" placeholder="Password" required>
+        </div>
+        <div class="form-group p-2">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <div class="register"><a href="#" routerLink="/register">New user? Sign Up</a><br><br></div>
+        </div>
+        </form>
+        <div class="form-group">
+            <p *ngIf="errorMessage.length > 0" class="text-danger">
+                {{errorMessage}}</p>
+        
+            <p *ngIf="error.message.length > 0" class="text-danger">
+                {{error.message}} </p>
+        
+           
+        </div>
+        </div>
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+    </div>
+</div>
+</div>

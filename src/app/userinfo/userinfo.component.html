@@ -1,0 +1,18 @@
+<div class="container">
+    <table border="0" align="center" width="100%" cellspacing="0" cellpadding="10">
+        <tr height="20px" bgcolor="darkgray">
+          <h2>>>HOME</h2>
+        </tr>
+    </table>
+    <div class="left">
+        <div class="text-info p-5" *ngIf = "authservice.currentUser">
+            <h4 class="alldata">
+                USER PROFILE
+            </h4>
+            <h4><b>User E-mail ID:</b>{{authservice.currentUserEmail}}</h4>
+        </div>
+    </div><br><br><br><br><br>
+    <div><a href="#" routerLink="/login">Sign In</a></div>
+    <div><a href="#" routerLink="/register">Sign Up</a></div><br>
+    <a href="#" (click)="authservice.singout()">Logout</a>
+</div>

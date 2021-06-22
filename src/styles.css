@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+
+  h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h2{
+    color: rgb(255, 255, 255);
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  a {
+    color:cyan;
+  }
+
+  p{
+    color: red;
+  }
+
+  .card{
+    color: thistle;
+  }
+
+  .table{
+    color: darkgray;
+  }
+
+  .button {
+    background-color: deepskyblue;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+    font-size: 15px;
+    padding: 5px;
+    margin: auto;
+  }
